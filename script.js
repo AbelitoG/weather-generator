@@ -54,7 +54,7 @@ function weekWeather(geo){
         pHumidity.text('Humidity: ' + data.list[i].main.humidity)
         var pWind = $('<p>')
         pWind.text('Wind: ' + data.list[i].wind.speed)
-        container.append(pDate, pHumidity, pTemp, pWind)
+        container.append(pDate, image, pHumidity, pTemp, pWind)
         fiveDayEl.append(container)
     }
     })
